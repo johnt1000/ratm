@@ -1,0 +1,10 @@
+#!/bin/bash
+
+source ./bin/color_logs
+
+clear
+echo_info "Docker build..."
+docker build --rm -t ruby-ratm .
+clear
+echo_info "Run Rage Against The Machine"
+docker run -it --rm ruby-ratm ruby ./lib/console.rb

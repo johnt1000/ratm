@@ -28,6 +28,7 @@ completion =
             puts @ratm.version
         when Readline.line_buffer =~ /exit.*/i
             puts 'Exiting..'
+            puts `clear`
             exit 0
         else
             CMDS.grep( /^#{Regexp.escape(str)}/i ) unless str.nil?

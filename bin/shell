@@ -1,2 +1,2 @@
 #!/bin/bash
-docker run -it ruby-ratm sh
+docker run -it ruby-ratm bash

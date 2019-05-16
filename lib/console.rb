@@ -14,7 +14,7 @@ boot.update_gems
 
 # commands
 CMDS = [
-    'zipbf'.yellow.concat("\tBrute force for zip files."),
+    'zipbruteforce'.yellow.concat("\tBrute force for zip files."),
     'ls'.yellow.concat("\t\tList files."),
     'help'.yellow.concat("\t\tList all commands."),
     'version'.yellow.concat("\t\tSystem version."),
@@ -24,7 +24,7 @@ CMDS = [
 completion = 
     proc do |str|
         case
-        when Readline.line_buffer =~ /zipbf.*/i
+        when Readline.line_buffer =~ /zipbruteforce.*/i
             params = Readline.line_buffer.split(/ /)
             puts `ruby vendor/zipbruteforce/zipbruteforce #{params[1]} #{params[2]}`
         when Readline.line_buffer =~ /help.*/i

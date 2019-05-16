@@ -13,6 +13,7 @@ RUN apk update \
         bash
 
 RUN gem install pry \
-    colorize
+    colorize \
+    bundle
 
 COPY . .

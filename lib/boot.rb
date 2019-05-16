@@ -9,8 +9,9 @@ class Boot
     puts "\nFinished gem update\n".dark_purple
   end
 
-  def zipbruteforce
-    puts 'ZipBruteForce'.blue
-    puts `cd vendor/zipbruteforce/ && bundle install`.green
-  end
+  private
+    def bundle_zipbruteforce
+      puts 'ZipBruteForce'.blue
+      puts `cd vendor/zipbruteforce/ && bundle install`.green
+    end
 end

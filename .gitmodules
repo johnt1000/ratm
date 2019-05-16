@@ -1,0 +1,3 @@
+[submodule "zipbruteforce"]
+	path = vendor/zipbruteforce
+	url = https://github.com/johnt1000/zipbruteforce.git
